@@ -65,7 +65,7 @@ Synthesize each section of `me.md`:
 
 **Quick Bio** — Pull from `README.md`'s one-sentence description, expand using `background.md` (current chapter, identity threads). Keep to 3–5 sentences. Must answer: who they are, what they're building, where they are in life.
 
-**Current Focus** — Leave as a 3-line placeholder with `[To be updated by digest]`. Digest will fill this weekly. Do not invent priorities.
+**Current Focus** — Leave as a 3-line placeholder with `[To be updated by weekly-mirror]`. The weekly-mirror skill will fill this weekly. Do not invent priorities.
 
 **How to Work With Me** — Pull from `personality.md`'s "How to Work With Me" section if it exists. Condense to 3–4 bullets: communication style, decision-making style, what they want from AI, work rhythm. Strip anything verbose.
 
@@ -105,7 +105,7 @@ If this was the last setup skill, say instead: "`me.md` is set up. All setup is 
 
 - **Tight is the whole point.** If a section is bloated, cut it. Target: 50–80 lines of filled content, not 200. Every line should give an AI something actionable.
 - **Don't invent.** If a source file is a template/placeholder, leave that section of `me.md` as a placeholder too. Do not make up values, frameworks, or priorities.
-- **Current Focus is always a digest placeholder.** This skill never fills it. The first `digest` run after setup-me will populate it.
+- **Current Focus is always a weekly-mirror placeholder.** This skill never fills it. The first `weekly-mirror` run after setup-me will populate it.
 - **Pointers table is the escape hatch.** If an AI needs more than what `me.md` contains, it has clear pointers to the deeper files. Don't try to cram depth into `me.md`.
 
 ---

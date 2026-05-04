@@ -101,10 +101,10 @@ If the only remaining setup is `setup-me`, add: "You're one step from a fully co
 
 ## Important Notes
 
-- **Low friction is the goal.** If someone gives short answers, work with what you get. A 200-word background is infinitely better than an empty file. The digest skill will suggest additions over time as it picks up details from journals and sessions.
+- **Low friction is the goal.** If someone gives short answers, work with what you get. A 200-word background is infinitely better than an empty file. The weekly-mirror skill will suggest additions over time as it picks up details from journals and sessions.
 - **Don't push for vulnerability.** The "formative struggle" question is optional. If someone deflects or keeps it surface-level, that's fine — move on.
 - **First person, their voice.** Don't over-formalize. If they're casual, write casually. If they're precise, write precisely.
-- **This document evolves.** The digest skill checks for identity-relevant material in journals and sessions and can suggest appending to background.md over time. Make this clear so users don't feel pressure to "get it right" on the first pass.
+- **This document evolves.** The weekly-mirror skill checks for identity-relevant material in journals and sessions and can suggest appending to background.md over time. Make this clear so users don't feel pressure to "get it right" on the first pass.
 
 ---
 

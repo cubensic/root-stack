@@ -1,6 +1,6 @@
 # Personality
 *Your personality profile — mapped using the Big Five (OCEAN) model through conversation.*
-*This document evolves over time as the digest skill picks up patterns from your journals and sessions.*
+*This document evolves over time as the weekly-mirror skill picks up patterns from your journals and sessions.*
 *Last updated: [date]*
 
 ---

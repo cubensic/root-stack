@@ -109,8 +109,8 @@ When the user says "continue setup", "what setup is left", or similar:
 - **Never delete existing content.** If a file has entries (patterns, lessons, people), only append — never remove.
 - **Markdown only.** All user-facing content is `.md`. Don't create other file types unless asked.
 - **Keep it honest.** Don't invent content for the user's files. Draft from what they tell you, not from assumptions.
-- **Sessions are captured automatically.** The session-harvest skill (`Skills/session-harvest/`) copies raw Claude Code session transcripts and processes them into summaries. This runs as part of the digest flow. You do not need to manually log sessions — the raw transcripts are the source of truth.
+- **Sessions are read live, not stored.** The `weekly-mirror` skill reads Claude Code session transcripts directly via MCP tools (`mcp__ccd_session_mgmt__list_sessions`, `mcp__ccd_session_mgmt__search_session_transcripts`). No session files are copied to the vault.
 - **Knowledge base is three layers.** Raw sources (`Knowledge Base/Raw/Sources/`) are immutable — never modify them after ingest. Wiki pages (`Knowledge Base/Notes/`) are LLM-maintained and updated whenever new sources connect to existing pages. `Knowledge Base/index.md` tracks everything. When ingesting sources, follow the kb-ingest skill.
 - **Setup skills self-delete.** When a setup skill completes, it deletes its own folder. Never recreate a deleted setup skill.
-- **`me.md` is the portable identity layer.** It's always loaded. The `digest` skill updates its `## Current Focus` section weekly. Deeper identity details live in `About [You]/`.
+- **`me.md` is the portable identity layer.** It's always loaded. The `weekly-mirror` skill updates its `## Current Focus` section weekly. Deeper identity details live in `About [You]/`.
 - **`vault-map.md` is the navigation map.** Always loaded. Replaces the need for folder-level READMEs. The `vault-map-updater` skill proposes updates when the vault structure changes.

@@ -59,13 +59,13 @@ This gives you a visual interface for browsing your files, writing journal entri
 
 ## What happens next
 
-**Each session:** Claude Code automatically harvests your previous session transcripts and checks if any maintenance is due (digest, vault-map updater, KB lint, style-analyzer, goal-review).
+**Each session:** Claude Code checks if any maintenance is due (weekly-mirror, vault-map updater, KB lint, style-analyzer, goal-review).
 
 **Setup conversations:** You have 6 optional setup conversations that fill in your profile — background, values, personality, writing style, goals, and `me.md` (the synthesis step). Each one is a short chat that runs a framework-driven assessment and drafts a section of your vault. Say **"continue setup"** anytime to see what's remaining.
 
-**Weekly:** The digest skill synthesizes your journals and sessions into the `## Current Focus` section of `me.md` and appends lessons learned. The style-analyzer updates your writing style guide if you've added new samples.
+**Weekly:** The weekly-mirror skill reads your journals and AI sessions directly, then synthesizes them into the `## Current Focus` section of `me.md` and appends lessons learned. The style-analyzer updates your writing style guide if you've added new samples.
 
-**Monthly:** The digest produces behavioral patterns from 30 days of data. The goal-review skill checks progress against your 1-year goals with evidence from actual behavior.
+**Monthly:** The weekly-mirror produces behavioral patterns from 30 days of data. The goal-review skill checks progress against your 1-year goals with evidence from actual behavior.
 
 ---
 

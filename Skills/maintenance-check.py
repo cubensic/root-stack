@@ -8,8 +8,7 @@ If maintenance is due, returns additionalContext telling Claude what to run.
 If nothing is due, returns silently.
 
 Maintenance schedule:
-- Session harvest: every session (always run)
-- Digest: every 7 days
+- Weekly mirror: every 7 days
 - Vault-map updater: every 7 days
 - Style analyzer: every 7 days (only if samples exist)
 - KB lint: every 14 days
@@ -68,12 +67,12 @@ def check_maintenance(vault_root):
     now = datetime.now()
     due = []
 
-    # Check digest (every 7 days)
-    last_digest = read_timestamp(state_dir, "digest")
-    if last_digest is None or (now - last_digest) > timedelta(days=7):
-        days_ago = "never" if last_digest is None else f"{(now - last_digest).days} days ago"
+    # Check weekly-mirror (every 7 days)
+    last_mirror = read_timestamp(state_dir, "weekly-mirror")
+    if last_mirror is None or (now - last_mirror) > timedelta(days=7):
+        days_ago = "never" if last_mirror is None else f"{(now - last_mirror).days} days ago"
         due.append({
-            "task": "digest",
+            "task": "weekly-mirror",
             "last_run": days_ago,
             "description": "Synthesize recent journals and sessions into me.md Current Focus, patterns, and lessons"
         })

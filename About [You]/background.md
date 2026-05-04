@@ -1,6 +1,6 @@
 # Background
 *Your origin story — the turning points, struggles, and threads that explain who you are.*
-*This document grows over time. The digest skill suggests additions when it finds identity-relevant details in your journals and sessions.*
+*This document grows over time. The weekly-mirror skill suggests additions when it finds identity-relevant details in your journals and sessions.*
 *Last updated: [date]*
 
 ---

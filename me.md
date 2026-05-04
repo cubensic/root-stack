@@ -1,6 +1,6 @@
 <!-- Always-loaded portable identity. Kept tight so it fits every tool's context budget. -->
 <!-- Populated by the `setup-me` skill after the other setup skills are complete. -->
-<!-- The `## Current Focus` section is updated weekly by the `digest` skill. -->
+<!-- The `## Current Focus` section is updated weekly by the `weekly-mirror` skill. -->
 
 # Me
 *Last updated: [date]*
@@ -17,7 +17,7 @@
 
 ## Current Focus
 
-*Top 1–3 priorities right now. Updated weekly by `digest`.*
+*Top 1–3 priorities right now. Updated weekly by `weekly-mirror`.*
 
 1. [Priority 1 — one line]
 2. [Priority 2 — one line]

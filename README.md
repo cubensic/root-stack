@@ -47,7 +47,7 @@ Rootstack gives any AI tool — Claude Code, Cursor, Codex, anything — a persi
 
 Three things make it work:
 
-1. **`me.md`** — a tight identity file always loaded by the AI. Who you are, what you're focused on, how to work with you. Updated weekly by the `digest` skill.
+1. **`me.md`** — a tight identity file always loaded by the AI. Who you are, what you're focused on, how to work with you. Updated weekly by the `weekly-mirror` skill.
 2. **`vault-map.md`** — a navigation manual so the AI knows where to go for depth. Always loaded.
 3. **Skills** — AI-executable workflows (markdown files) that keep the vault alive over time. See `Skills/index.md`.
 
@@ -66,7 +66,7 @@ See [GETTING_STARTED.md](GETTING_STARTED.md). The short version:
 
 ## Maintenance
 
-The `maintenance-check.py` script runs at session start and flags overdue skills (digest, vault-map-updater, style-analyzer, goal-review, kb-lint). Claude Code reads the output via a SessionStart hook and offers to run what's due.
+The `maintenance-check.py` script runs at session start and flags overdue skills (weekly-mirror, vault-map-updater, style-analyzer, goal-review, kb-lint). Claude Code reads the output via a SessionStart hook and offers to run what's due.
 
 ---
 

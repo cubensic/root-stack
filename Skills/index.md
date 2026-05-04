@@ -23,15 +23,10 @@ Or say **"continue setup"** to see what's remaining.
 
 ## Core Skills — Permanent
 
-### `digest`
-**What:** Reads recent journals + session summaries. Writes the `## Current Focus` section of `me.md`, appends lessons, appends behavioral patterns (monthly, needs 3+ evidence points), appends identity-relevant material to `background.md`.
-**Cadence:** Weekly (automated) — monthly patterns window.
-**Trigger:** "Run my digest", "Update me.md"
-
-### `session-harvest`
-**What:** Copies raw Claude Code `.jsonl` transcripts from `~/.claude/projects/` and generates processed markdown summaries in `Knowledge Base/Sessions/`. Feeds `digest`.
-**Cadence:** Weekly (runs as part of digest flow).
-**Trigger:** "Harvest my sessions"
+### `weekly-mirror`
+**What:** Weekly synthesis of journals and AI sessions. Reads session transcripts live via MCP tools (no files copied to vault), reads the last 7 days of journals, and proposes updates to `me.md` Current Focus, behavioral patterns, lessons learned, people, and other vault targets — all for approval before writing.
+**Cadence:** Weekly (automated, Sunday 7am) — monthly patterns window (30 days).
+**Trigger:** "Run my weekly mirror", "Run my digest", "Weekly review", "What happened this week", "Update my patterns"
 
 ### `goal-review`
 **What:** Monthly evidence-based review of 1-year goals. Reads journals + sessions, assesses actual behavior vs. stated goals, generates a review file, proposes goal updates.

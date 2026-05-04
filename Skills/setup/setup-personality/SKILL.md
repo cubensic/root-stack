@@ -24,7 +24,7 @@ Tell the user:
 
 > "This will take about **10–15 minutes**. I'll ask you questions about how you think, work, and handle different situations. Behind the scenes I'm mapping your personality against the Big Five model — but it'll feel like a conversation, not a test.
 >
-> Like everything in Rootstack, this evolves over time. The digest skill will refine your personality profile as it learns more about you from journals and sessions.
+> Like everything in Rootstack, this evolves over time. The weekly-mirror skill will refine your personality profile as it learns more about you from journals and sessions.
 >
 > Ready?"
 
@@ -129,7 +129,7 @@ If the only remaining setup is `setup-me`, add: "You're one step from a fully co
 - **Trust behavioral evidence.** If someone says they're organized but describes a chaotic, improvised workflow — go with the behavior. Gently note the discrepancy: "You mentioned you value organization, but it sounds like your actual process is more intuitive and flexible — would you say that's accurate?"
 - **Avoid pathologizing neuroticism.** Frame it as emotional sensitivity/resilience, not as a problem. High neuroticism isn't bad — it often comes with higher empathy and self-awareness.
 - **The Big Five profile is descriptive, not prescriptive.** It maps where someone is, not where they should be. No trait is "better" at any level.
-- **This document evolves.** The digest skill can suggest refinements to personality.md over time as patterns emerge from journals and sessions.
+- **This document evolves.** The weekly-mirror skill can suggest refinements to personality.md over time as patterns emerge from journals and sessions.
 
 ---
 

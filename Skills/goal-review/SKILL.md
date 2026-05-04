@@ -28,7 +28,7 @@ Read:
 - `About [You]/goals/1-year.md` — the goals and key results
 - `me.md` — current focus and identity (root-level, always loaded)
 - Recent journal entries from `Journal/Personal/` and `Journal/Work/` (last 30 days)
-- Recent session summaries from `Knowledge Base/Sessions/` (last 30 days)
+- Recent sessions via `mcp__ccd_session_mgmt__list_sessions` + `mcp__ccd_session_mgmt__search_session_transcripts` (last 30 days)
 - The previous month's review (if any) from `About [You]/goals/reviews/`
 
 ### Step 2 — Assess each goal

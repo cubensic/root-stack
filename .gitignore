@@ -20,3 +20,4 @@ Knowledge Base/Raw/Sessions/*.jsonl
 desktop.ini
 .DS_Store
 *.tmp
+._*

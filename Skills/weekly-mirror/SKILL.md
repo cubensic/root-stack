@@ -1,17 +1,17 @@
 ---
 name: weekly-mirror
-description: Weekly synthesis of journals and AI sessions into the vault. Updates me.md Current Focus, surfaces patterns and lessons, proposes people and broader vault updates — all for approval. Use when Ante says "run the weekly mirror", "do the mirror", "weekly review", "what happened this week", "run my digest", "update my patterns", or when a scheduled weekly task fires. Never apply vault changes without explicit approval.
+description: Weekly synthesis of journals and AI sessions into the vault. Updates me.md Current Focus, surfaces patterns and lessons, proposes people and broader vault updates — all for approval. Use when the user says "run the weekly mirror", "do the mirror", "weekly review", "what happened this week", "run my digest", "update my patterns", or when a scheduled weekly task fires. Never apply vault changes without explicit approval.
 ---
 
 # Weekly Mirror
 
-*Weekly synthesis of Ante's journals and AI sessions into the vault. Covers identity updates (me.md, patterns, lessons) and broader vault housekeeping (people, strategy). Nothing gets written without approval.*
+*Weekly synthesis of the user's journals and AI sessions into the vault. Covers identity updates (me.md, patterns, lessons) and broader vault housekeeping (people, strategy). Nothing gets written without approval.*
 
 ---
 
 ## When to run
 
-- Ante says "run the weekly mirror", "do the mirror", "run my digest", "update my patterns", or similar
+- The user says "run the weekly mirror", "do the mirror", "run my digest", "update my patterns", or similar
 - The weekly-mirror scheduled task fires (Sunday 7am)
 - Last run was more than 7 days ago → surface the suggestion at session start
 
@@ -23,7 +23,7 @@ Before reading journals, pull in recent AI session context using the session man
 
 1. Call `mcp__ccd_session_mgmt__list_sessions` to get the 15 most recent sessions
 2. For each substantive session (skip sessions titled "Getting Started", "Initial greeting", or obvious one-liners), call `mcp__ccd_session_mgmt__search_session_transcripts` to read its content — use a broad query or the session ID to extract the key material
-3. Focus on: decisions made, files changed, new projects or ideas surfaced, skills created or updated, things Ante approved or rejected, emotional signals
+3. Focus on: decisions made, files changed, new projects or ideas surfaced, skills created or updated, things the user approved or rejected, emotional signals
 
 This session context step is often the richest source of signal — richer than journals — because it captures actual work output, not just reflection. No files are copied to the vault; sessions are read live.
 
@@ -41,7 +41,7 @@ Note which days have no entry — gaps are signal too.
 
 For pattern detection (monthly output), also read the last 30 days of entries. Keep the 7-day and 30-day sets mentally separate.
 
-If no entries found from the last 7 days and no sessions found, stop and tell Ante: "No journal entries or session logs found from the last 7 days. Nothing to mirror."
+If no entries found from the last 7 days and no sessions found, stop and tell the user: "No journal entries or session logs found from the last 7 days. Nothing to mirror."
 
 ---
 
@@ -50,9 +50,9 @@ If no entries found from the last 7 days and no sessions found, stop and tell An
 Before proposing anything, read these files to understand what already exists:
 
 - `me.md` — current identity snapshot and Current Focus section
-- `About Ante/patterns/behavioral-patterns.md` — documented patterns (to avoid duplicates)
-- `About Ante/patterns/lessons-learned.md` — existing lessons (to avoid duplicates)
-- `About Ante/people.md` — people already documented (to know what's missing)
+- `About [You]/patterns/behavioral-patterns.md` — documented patterns (to avoid duplicates)
+- `About [You]/patterns/lessons-learned.md` — existing lessons (to avoid duplicates)
+- `About [You]/people.md` — people already documented (to know what's missing). Skip this step if the file doesn't exist yet.
 
 ---
 
@@ -61,7 +61,7 @@ Before proposing anything, read these files to understand what already exists:
 Work through four output areas:
 
 **A. Current Focus (weekly — always)**
-What is Ante actually spending time on this week? What decisions or tensions are recurring? Produce 1–3 bullets. Each bullet is one line — crisp noun phrase or short sentence. Replace the existing section, don't append.
+What is the user actually spending time on this week? What decisions or tensions are recurring? Produce 1–3 bullets. Each bullet is one line — crisp noun phrase or short sentence. Replace the existing section, don't append.
 
 Example:
 ```
@@ -71,23 +71,23 @@ Example:
 ```
 
 **B. Behavioral patterns (monthly — only if 3+ evidence points)**
-A pattern qualifies for `About Ante/patterns/behavioral-patterns.md` if:
+A pattern qualifies for `About [You]/patterns/behavioral-patterns.md` if:
 - It appears in 3+ separate entries within the last 30 days
 - It is not already documented
-- It reveals something meaningful about how Ante operates
+- It reveals something meaningful about how the user operates
 
 If it qualifies, draft a new entry in the same format as existing entries. If it doesn't hit the threshold, note it in the Signal Summary instead — don't force it.
 
 **C. Lessons learned (weekly — only if a distinct lesson emerged)**
-A lesson qualifies for `About Ante/patterns/lessons-learned.md` if:
-- Ante explicitly stated a realization or conclusion in a journal or session
+A lesson qualifies for `About [You]/patterns/lessons-learned.md` if:
+- The user explicitly stated a realization or conclusion in a journal or session
 - It's not already captured
 - It's specific enough to be actionable later
 
 Format: `[YYYY-MM-DD] — [lesson in one crisp sentence]`
 
 **D. People update (weekly — if new people appear or existing entries need updating)**
-Check `About Ante/people.md`. Did new people appear 2+ times in journals/sessions? Did something notable happen with an existing person? Propose additions or updates.
+Check `About [You]/people.md`. Did new people appear 2+ times in journals/sessions? Did something notable happen with an existing person? Propose additions or updates. Skip if the file doesn't exist yet — propose creating it if a person clearly warrants an entry.
 
 **E. Broader vault proposals (weekly — up to 3 additional)**
 What exists in the world now that isn't reflected in the vault?
@@ -161,13 +161,13 @@ Replacing current section with:
 Ready to apply? Reply "yes" to apply all, or tell me which parts to skip or change.
 ```
 
-Stop here. Do not edit any vault files until Ante responds.
+Stop here. Do not edit any vault files until the user responds.
 
 ---
 
 ## Step 5 — Apply on approval
 
-Ante can reply:
+The user can reply:
 - `yes` or `apply all` — apply everything proposed
 - `apply A, C, D` — apply specific sections
 - `skip B` / `reject E2` — skip specific items
@@ -178,10 +178,10 @@ Apply each approved change. Follow these rules without exception:
 | File | Rule |
 |---|---|
 | `me.md` | Replace only the `## Current Focus` section. Update `*Updated: [month year]*`. Touch nothing else. |
-| `About Ante/patterns/behavioral-patterns.md` | Append new entry at the bottom. Never edit existing entries. |
-| `About Ante/patterns/lessons-learned.md` | Append new entry at the bottom. Never edit existing entries. |
-| `About Ante/Goals/Reviews/` | Append only. Never edit past entries. |
-| `About Ante/people.md` | Append new entries or update existing — never remove people. |
+| `About [You]/patterns/behavioral-patterns.md` | Append new entry at the bottom. Never edit existing entries. |
+| `About [You]/patterns/lessons-learned.md` | Append new entry at the bottom. Never edit existing entries. |
+| `About [You]/goals/reviews/` | Append only. Never edit past entries. |
+| `About [You]/people.md` | Append new entries or update existing — never remove people. |
 | `Knowledge Base/Raw/` | Immutable. Never touch. |
 | `Journal/` | Read-only. Never edit entries after they are written. |
 
@@ -228,5 +228,5 @@ Append the entry at the bottom of the file. This is a write operation — do it 
 - Maximum 3 bullets in Current Focus — if more than 3 things are active, pick the most urgent
 - Patterns require 3+ evidence points across separate entries — not 3 mentions in one entry
 - Don't propose things already in the vault — read before proposing
-- Don't interpret emotions Ante hasn't explicitly named himself
-- If Ante rejects a proposed change, don't retry the same item in the same session
+- Don't interpret emotions the user hasn't explicitly named
+- If the user rejects a proposed change, don't retry the same item in the same session
